@@ -1,0 +1,287 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+// For primary
+$primary-Light-red-color:hsl(0, 100%, 67%);
+$primary-Orangey-yellow-color: hsl(39, 100%, 56%);
+$primary-Green-teal-color: hsl(166, 100%, 37%);
+$primary-Cobalt-blue: hsl(234, 85%, 45%);
+// for gradients
+$gradients-Light-slate-blue-background: hsl(252, 100%, 67%);
+$gradients-Light-royal-blue-background: hsl(241, 81%, 54%);
+
+$gradients-Violet-blue-circle: hsla(256, 72%, 46%, 1);
+$gradient-Persian-blue-circle: hsla(241, 72%, 46%, 0);
+//for neutral
+$neutral-white:hsl(0, 0%, 100%);
+$neutral-Pale-blue: hsl(221, 100%, 96%);
+$neutral-Light-lavender:hsl(241, 100%, 89%);
+$neutral-Dark-gray-blue:hsl(224, 30%, 27%);
+
+//for body copy
+$Font-size-paragraphs: 18px;
+
+// font weight
+$font-weight-1: 500;
+$font-weight-2: 700;
+$font-weight-3: 800;
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Hanken Grotesk", sans-serif;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #f0f0f0; 
+    overflow: hidden;
+  }
+
+ 
+.container{
+ background-color: $neutral-white;
+    display: flex;
+    width: 600px;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+     
+
+    .left-container{
+        background: linear-gradient(135deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 20px;
+        width: 50%;
+        height: inherit;
+        display: inline-block;
+        overflow: hidden;
+       
+        
+    
+        .result{
+            font-size: medium;
+            margin-top: 30px;
+            color: $neutral-white;
+          
+
+        }
+        .circle-score{
+            background: linear-gradient(135deg,  hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+            width: 150px;
+            height:150px;
+            border-radius: 50%;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            margin-top: 50px;
+
+           
+            .score-num{
+                font-size:3rem;
+                color: #f0f0f0;
+
+            }
+            .small-num{
+                
+                color: rgba(255, 248, 220, 0.301);
+
+            }
+
+        }
+
+           .great{
+             margin-top: 25px;
+             font-size: 1.6rem;
+             color: $neutral-Light-lavender;
+
+            }
+            .para{
+                
+                height: 100px;
+                color: $neutral-Light-lavender;
+
+            } 
+    }
+
+    .right-container{
+        background-color:$neutral-white;
+        border-radius:  0 20px 20px 0 ;
+        width: 50%;
+        height: inherit;
+        display: inline-block;
+        overflow: hidden;
+       
+       
+
+        .summary{
+
+            font-size: 20px;
+            display:flex ;
+            justify-content: start;
+            margin-left: 30px;
+            margin-top: 30px;
+
+        }
+
+        .score-board {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+            margin-top: 30px;
+          
+            .reaction {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: auto;
+              height: 40px;
+              background-color:$neutral-Pale-blue;
+              padding: 10px; 
+              border-radius: 5px; 
+              font-size: small;
+              color: $primary-Light-red-color;  
+              margin-right: 30px;
+           
+          
+              i {
+                margin-right: 10px; 
+              }
+
+              span{
+                margin-right: 110px;
+              }
+             
+                p{
+                
+                    margin-right: 20px;
+                   
+
+
+                }
+              
+             }
+             
+            }
+          
+            .memory {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: auto;
+                height: 40px;
+                background-color:$neutral-Pale-blue;
+                padding: 10px; 
+                border-radius: 5px; 
+                font-size: small;
+                color: $primary-Orangey-yellow-color;  
+                margin-right: 30px;
+                margin-top: 10px;
+          
+              i {
+                margin-right: 10px;
+                
+              }
+
+              span{
+                margin-right: 110px;
+              }
+              p{
+                
+                margin-right: 20px;
+               
+
+
+            }
+
+             
+            }
+          
+            .verval {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: auto;
+                height: 40px;
+                background-color:$neutral-Pale-blue;
+                padding: 10px; 
+                border-radius: 5px; 
+                font-size: small;
+                color: $primary-Green-teal-color;  
+                margin-right: 30px;
+                margin-top: 10px;
+              i {
+                margin-right: -10px;
+              }
+              span{
+                margin-right: 110px;
+              }
+
+              p{
+                
+                margin-right: 20px;
+               
+
+
+            }
+             
+            }
+          
+            .visual {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: auto;
+                height: 40px;
+                background-color:$neutral-Pale-blue;
+                padding: 10px; 
+                border-radius: 5px; 
+                font-size: small;
+                color: $primary-Cobalt-blue;  
+                margin-right: 30px;
+                margin-top: 10px;
+          
+              i {
+                margin-right: -10px;
+              }
+              span{
+                margin-right: 110px;
+              }
+
+              p{
+                
+                margin-right: 20px;
+               
+
+
+            }
+             
+            }
+          }
+          
+
+       
+        .btn{
+           width: 250px;
+           height: 40px;
+           border-radius: 60px;
+           background: linear-gradient(135deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+           margin-top: 40px;
+           border: 0;
+           color: #f0f0f0;
+
+        }
+    }
+
+   
+    
+

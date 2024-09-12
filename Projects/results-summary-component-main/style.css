@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  width: 600px;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.container .left-container {
+  background: linear-gradient(135deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 20px;
+  width: 50%;
+  height: inherit;
+  display: inline-block;
+  overflow: hidden;
+}
+.container .left-container .result {
+  font-size: medium;
+  margin-top: 30px;
+  color: hsl(0, 0%, 100%);
+}
+.container .left-container .circle-score {
+  background: linear-gradient(135deg, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 50px;
+}
+.container .left-container .circle-score .score-num {
+  font-size: 3rem;
+  color: #f0f0f0;
+}
+.container .left-container .circle-score .small-num {
+  color: rgba(255, 248, 220, 0.301);
+}
+.container .left-container .great {
+  margin-top: 25px;
+  font-size: 1.6rem;
+  color: hsl(241, 100%, 89%);
+}
+.container .left-container .para {
+  height: 100px;
+  color: hsl(241, 100%, 89%);
+}
+.container .right-container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 20px 20px 0;
+  width: 50%;
+  height: inherit;
+  display: inline-block;
+  overflow: hidden;
+}
+.container .right-container .summary {
+  font-size: 20px;
+  display: flex;
+  justify-content: start;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.container .right-container .score-board {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.container .right-container .score-board .reaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: 40px;
+  background-color: hsl(221, 100%, 96%);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: small;
+  color: hsl(0, 100%, 67%);
+  margin-right: 30px;
+}
+.container .right-container .score-board .reaction i {
+  margin-right: 10px;
+}
+.container .right-container .score-board .reaction span {
+  margin-right: 110px;
+}
+.container .right-container .score-board .reaction p {
+  margin-right: 20px;
+}
+.container .right-container .memory {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: 40px;
+  background-color: hsl(221, 100%, 96%);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: small;
+  color: hsl(39, 100%, 56%);
+  margin-right: 30px;
+  margin-top: 10px;
+}
+.container .right-container .memory i {
+  margin-right: 10px;
+}
+.container .right-container .memory span {
+  margin-right: 110px;
+}
+.container .right-container .memory p {
+  margin-right: 20px;
+}
+.container .right-container .verval {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: 40px;
+  background-color: hsl(221, 100%, 96%);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: small;
+  color: hsl(166, 100%, 37%);
+  margin-right: 30px;
+  margin-top: 10px;
+}
+.container .right-container .verval i {
+  margin-right: -10px;
+}
+.container .right-container .verval span {
+  margin-right: 110px;
+}
+.container .right-container .verval p {
+  margin-right: 20px;
+}
+.container .right-container .visual {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: 40px;
+  background-color: hsl(221, 100%, 96%);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: small;
+  color: hsl(234, 85%, 45%);
+  margin-right: 30px;
+  margin-top: 10px;
+}
+.container .right-container .visual i {
+  margin-right: -10px;
+}
+.container .right-container .visual span {
+  margin-right: 110px;
+}
+.container .right-container .visual p {
+  margin-right: 20px;
+}
+.container .btn {
+  width: 250px;
+  height: 40px;
+  border-radius: 60px;
+  background: linear-gradient(135deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  margin-top: 40px;
+  border: 0;
+  color: #f0f0f0;
+}/*# sourceMappingURL=style.css.map */
