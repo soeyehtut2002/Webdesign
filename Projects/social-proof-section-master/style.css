@@ -136,6 +136,7 @@ body {
 }
 .main-container .lower-container .card .profile-header .profile-detail p {
   color: hsl(333, 80%, 67%);
+  margin-top: 5px;
 }
 .main-container .lower-container .card .profile-content {
   text-align: left;
@@ -148,7 +149,8 @@ body {
   padding: 20px;
   color: white;
   width: 300px;
-  height: auto;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .main-container .lower-container .card span:nth-child(2) {
   margin-top: 15px;

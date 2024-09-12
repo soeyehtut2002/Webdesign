@@ -166,6 +166,8 @@ body {
     
                     p{
                         color: $Soft-Pink;
+                        margin-top: 5px;
+                        
     
                     }
 
@@ -187,7 +189,7 @@ body {
                 padding: 20px;
                 color: white;
                 width: 300px;
-                height: auto;
+                height: fit-content;
             }
 
             span:nth-child(1) {
