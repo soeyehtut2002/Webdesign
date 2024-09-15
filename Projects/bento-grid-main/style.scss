@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-1{grid-area: header;}
+.card-2{grid-area: menu ;}
+.card-3{grid-area: right ;}
+
+body{
+    width: 100%;
+    height: auto;
+    display: grid;
+    background-color: aqua;
+
+}
+.container{
+   border: 30px;
+   
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+
+
+
+}

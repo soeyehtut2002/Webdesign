@@ -13,24 +13,24 @@ The designs were created to the following widths:
 
 ### Primary
 
-Very Dark Magenta: hsl(300, 43%, 22%)
-Soft-Pink:hsl(333, 80%, 67%)
+- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
 
 ### Neutral
 
-Dark-Grayish-Magenta: hsl(303, 10%, 53%);
-Light-Grayish-Magenta: hsl(300, 24%, 96%);
-White: hsl(0, 0%, 100%);
+- Pale-Blue: hsl(243, 100%, 93%);
+- Grayish-Blue: hsl(229, 7%, 55%);
+- Dark-Blue: hsl(228, 56%, 26%);
+- Very-Dark-Blue: hsl(229, 57%, 11%);
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 15px
+- Font size: 14px
 
 ### Font
 
-- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
-- Weights: 400, 500, 700
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
