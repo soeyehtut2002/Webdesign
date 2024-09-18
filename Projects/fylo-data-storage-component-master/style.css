@@ -8,6 +8,7 @@
 }
 
 body {
+  background-image: url("images/bg-desktop.png");
   max-width: 1440px;
   height: 100vh;
   background-repeat: no-repeat;
@@ -22,27 +23,27 @@ body .container {
   display: flex;
   gap: 20px;
   align-items: flex-end;
+  flex-direction: row;
+  max-width: 1440px;
 }
 body .container .left-side {
   background-color: hsl(228, 56%, 26%);
-  border-radius: 5px 40px 5px 5px;
+  border-radius: 5px 60px 5px 5px;
   width: 200px;
-  height: 130px;
-  padding: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 body .container .left-side .logo {
   width: 80px;
-  height: -moz-fit-content;
-  height: fit-content;
   margin-bottom: 10px;
 }
 body .container .left-side .icon-container {
   display: flex;
-  gap: 10px;
-  margin-top: 12px;
+  gap: 15px;
 }
 body .container .left-side .icon-container .img-container {
   display: flex;
@@ -61,17 +62,54 @@ body .container .right-side {
   width: 400px;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 20px;
+  padding: 30px;
   position: relative;
-  border-radius: 5 px;
+  border-radius: 5px;
 }
 body .container .right-side .message {
   color: hsl(243, 100%, 93%);
   font-size: 14px;
   margin-bottom: 10px;
 }
-body .container .right-side input {
+body .container .right-side input[type=range] {
+  -webkit-appearance: none; /* Remove default WebKit styling */
   width: 100%;
+  height: 15px;
+  background: hsl(229, 7%, 55%);
+  border-radius: 5px;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+body .container .right-side input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+}
+body .container .right-side input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: hsl(27, 60%, 47%); /* Custom thumb color */
+  cursor: pointer;
+  border: 2px solid hsl(300, 24%, 96%);
+  margin-top: -4px; /* Adjust thumb position */
+}
+body .container .right-side input[type=range]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid hsl(6, 100%, 80%);
+  /*  slider progress trick  */
+  box-shadow: -407px 0 0 400px hsl(335, 100%, 65%);
 }
 body .container .right-side .storage {
   display: flex;
@@ -86,8 +124,18 @@ body .container .right-side .total {
   padding: 10px;
   position: absolute;
   right: 25px;
-  top: -25px;
+  top: -30px;
   border-radius: 10px;
+}
+body .container .right-side .total h2 {
+  font-weight: 800;
+}
+body .container .right-side .total p {
+  font-size: small;
+}
+body .container .right-side .total h2 {
+  margin: 0 5px;
+  color: hsl(228, 56%, 26%);
 }
 body .container .right-side .total::before {
   content: "";
@@ -98,8 +146,100 @@ body .container .right-side .total::before {
   bottom: -20px;
 }
 
-@media (min-witdh: 768px) {
+@media screen and (max-width: 767px) {
   body {
-    background-image: url("images/bg-mobile.png");
+    background-image: url("images/bg-desktop.png");
+    max-width: 1440px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container {
+    flex-direction: column;
+  }
+  body .container .left-side {
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px 80px 5px 5px;
+    align-items: normal;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .container .left-side .logo {
+    width: 100px;
+  }
+  body .container .left-side .icon-container {
+    margin-top: 10px;
+    width: 100%;
+  }
+  body .container .left-side .icon-container .img-container {
+    width: 20%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  body .container .right-side {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 30px;
+    justify-content: center;
+  }
+  body .container .right-side .total {
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+    top: 100px;
+    border-radius: 10px;
+    left: 25%;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body .container .right-side .total::before {
+    display: none;
+  }
+  input[type=range] {
+    -webkit-appearance: none; /* Remove default WebKit styling */
+    width: 100%;
+    height: 15px;
+    background: hsl(229, 7%, 55%);
+    border-radius: 5px;
+    outline: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: hsl(27, 60%, 47%); /* Custom thumb color */
+    cursor: pointer;
+    border: 2px solid hsl(300, 24%, 96%);
+    margin-top: -4px; /* Adjust thumb position */
+  }
+  input[type=range]::-webkit-slider-thumb {
+    /* removing default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    /* creating a custom design */
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid hsl(6, 100%, 80%);
+    /*  slider progress trick  */
+    box-shadow: -407px 0 0 400px hsl(335, 100%, 65%);
   }
 }/*# sourceMappingURL=style.css.map */
