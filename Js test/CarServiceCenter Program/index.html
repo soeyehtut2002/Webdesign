@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Service Center Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Car Service Center Registration</h2>
+      <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="name">Service Center Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter service center name"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+          required
+        />
+
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter phone number"
+          required
+        />
+
+        <label for="address">Address</label>
+        <textarea
+          id="address"
+          name="address"
+          placeholder="Enter address"
+          required
+        ></textarea>
+
+        <label for="services">Services Offered</label>
+        <input
+          type="text"
+          id="services"
+          name="services"
+          placeholder="Enter services (comma separated)"
+          required
+        />
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

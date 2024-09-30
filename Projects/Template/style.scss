@@ -1,0 +1,60 @@
+// Variables
+$bg-color: hsl(300, 24%, 96%);  // Light Grayish Magenta
+$container-color: hsl(0, 0%, 100%);  // White
+$primary-color: hsl(0, 0%, 0%);
+$hover-color: hsl(240, 100%, 40%);
+
+body{
+    background-color: $primary-color;
+    color: $bg-color;
+
+}
+
+.main{
+
+.navbar{
+   background-color: $primary-color;
+   padding: 20px;
+
+    .container{
+     display: flex;
+      justify-content:flex-start;
+      align-items: center;
+      max-width: 1440px;
+      margin: 0 auto;
+      gap: 30px;
+
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: rgb(213, 98, 98);
+        padding: 10px;
+        color: $primary-color;
+        border-radius: 30px;
+        border-style:inset ;
+      }
+  
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+        border-style:solid;
+        border-color: rgb(194, 216, 216);
+        border-radius: 20px;
+        background-color: rgb(0, 0, 0);
+        padding: 10px 50px 10px 50px;
+        
+
+    }
+}
+
+
+}
+
+.header{
+margin-bottom: 50px;
+  background-color: aqua;
+  font-size:100px ;
+}
+}
