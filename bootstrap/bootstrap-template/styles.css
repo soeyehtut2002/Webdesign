@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #273c55;
+  font-size: 15px;
+}
+
+.main-section {
+  min-height: 100vh;
+  background-image: linear-gradient(to left, rgb(36, 59, 85), rgb(20, 30, 48));
+}
+.main-section .custom-box {
+  border-radius: 40% 60% 30% 70%/33% 23% 77% 67%;
+  width: 300px;
+  height: 200px;
+  background-color: aqua;
+}
+
+.custom-shape-divider-bottom-1729191754 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1729191754 svg {
+  position: relative;
+  display: block;
+  width: calc(172% + 1.3px);
+  height: 192px;
+}
+
+.custom-shape-divider-bottom-1729191754 .shape-fill {
+  fill: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .main-section .custom-box {
+    width: 423px;
+    height: 324px;
+  }
+}
+.profile img {
+  width: 200px;
+  border: 10px solid aqua;
+  box-shadow: -8px -8px 0, -10px 10px 20px;
+  transform: skewY(5deg);
+}
+
+.card-section {
+  background-image: url(bg-img.jpg);
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+.card-section .custom-card {
+  background-color: rgba(255, 255, 255, 0.307);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}/*# sourceMappingURL=styles.css.map */
